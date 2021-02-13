@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deanna's Rad Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- font awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+
+        <!-- favicons -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png"> 
+        
+        <!-- custom stylesheet (overwrites bootstrap in the cascade)-->
+        <link href="./assets/css/style.css" rel="stylesheet">
+        
+        <!-- inconsolata google font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <!-- fixed navbar -->
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <!--nav bar title/name-->
+            <a class="navbar-brand" href="https://xander-deanna.github.io/responsive-portfolio/">Lorem Ipsum</a>
+            <!--nav button (for when collapsed)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar items-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://xander-deanna.github.io/responsive-portfolio/contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="https://xander-deanna.github.io/responsive-portfolio/portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://xander-deanna.github.io/responsive-portfolio/">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--flexbox/main content-->
+      <div class="container">
+        <div class="row main-div-margin">
+          <!-- portfolio box -->
+          <div class="col-md-8 main-content-box">
+            <h1>Portfolio</h1>
+            <hr>
+            <br>
+              <div class="col-md-12 portfolio-col">
+                <img src="./assets/images/portfolio-images/lizard1.gif" class=portfolio-photos alt="Illuminauti confirmed">
+                <img src="./assets/images/portfolio-images/lizard2.gif" class=portfolio-photos alt="Illuminauti confirmed">
+                <img src="./assets/images/portfolio-images/lizard3.gif" class=portfolio-photos alt="Illuminauti confirmed">
+                <img src="./assets/images/portfolio-images/lizard4.gif" class=portfolio-photos alt="Illuminauti confirmed">
+                <img src="./assets/images/portfolio-images/lizard5.gif" class=portfolio-photos alt="Illuminauti confirmed">
+                <img src="./assets/images/portfolio-images/lizard6.gif" class=portfolio-photos alt="Illuminauti confirmed">
+            </div>
+          </div>
+          <!--empty column-->
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+
+      <!-- footer-->
+      <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+          <span>Made with 🖤 by Deanna Alexander.</span>
+          <br>
+          <span>
+            <a id="linkedin" href="https://www.linkedin.com/in/xander-deanna/"><i class="footer-icons fab fa-linkedin"></i></a>
+            <a id="github"href="https://github.com/xander-deanna?tab=repositories"><i class="footer-icons fab fa-github-square"></i></a>
+          </span>
+        </div>
+      </footer>
+    </body>
+  </html>
