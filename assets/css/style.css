@@ -43,6 +43,12 @@ body {
     display:inline-block;
 }
 
+/* contact icon and portfolio icon */
+.contact-icon, .portfolio-icon{
+    font-size: 35px;
+    margin: 0px 10px 0px 5px;
+}
+
 /* footer attributes for all pages */
 footer {
     color: #ffffff8c; 
