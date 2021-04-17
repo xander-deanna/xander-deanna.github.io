@@ -41,16 +41,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="mailto:xander.deanna@gmail.com">Contact</a>
+                  <a class="nav-link" href="mailto:xander.deanna@gmail.com"><i class="fas fa-paper-plane"></i> Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://xander-deanna.github.io/portfolio">Portfolio</a>
+                  <a class="nav-link" href="https://xander-deanna.github.io/portfolio"><i class="fas fa-code"></i> Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./assets/Resume.pdf" download="Resume">Résumé</a>
+                  <a class="nav-link" href="./assets/Resume.pdf" download=" Resume"><i class="fas fa-file-alt"></i> Résumé</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="https://xander-deanna.github.io/">About</a>
+                  <a class="nav-link" href="https://xander-deanna.github.io/"><i class="fas fa-info"></i> About</a>
                 </li>
               </ul>
             </div>
@@ -63,13 +63,25 @@
         <div class="row main-div-margin">
           <!-- portfolio box -->
           <div class="col-md-8 main-content-box">
-            <h1><i class="portfolio-icon fab fa-github-square"></i>Portfolio</h1>
+            <h1></i>Portfolio</h1>
             <hr>
             <br>
             <div class="col-md-12 portfolio-col">
-              <a href="https://github.com/xander-deanna/code-quiz"><img src="./assets/images/code-quiz.gif" class=portfolio-photos alt="code-quiz assignment gif"></a>
-              <a href="https://github.com/xander-deanna/password-generator"><img src="./assets/images/password-generator.gif" class=portfolio-photos alt="password-generator assignment gif"></a>
-              <a href="https://github.com/xander-deanna/project-1-group-7"><img src="./assets/images/project-1.gif" class=portfolio-photos alt="project-1 gif"></a>
+              <!-- code quiz -->
+              <img src="./assets/images/code-quiz.gif" class="portfolio-photos" alt="code-quiz assignment gif" data-toggle="modal" data-target="#code-quiz-modal">
+              <!-- password generator -->
+              <img src="./assets/images/password-generator.gif" class="portfolio-photos" alt="password-generator assignment gif" data-toggle="modal" data-target="#password-generator-modal">
+              <!-- project 1 -->
+              <img src="./assets/images/project-1.gif" class="portfolio-photos" alt="project-1 gif" data-toggle="modal" data-target="#project-1-modal">
+              <!-- project 2 -->
+              <img src="./assets/images/project-2.gif" class="portfolio-photos" alt="project-2 gif" data-toggle="modal" data-target="#project-2-modal">
+
+
+
+
+              <!-- <a href="https://github.com/xander-deanna/password-generator"><img src="./assets/images/password-generator.gif" class="portfolio-photos" alt="password-generator assignment gif"></a>
+              <a href="https://github.com/xander-deanna/project-1-group-7"><img src="./assets/images/project-1.gif" class="portfolio-photos" alt="project-1 gif"></a>
+              <a href="https://github.com/xander-deanna/project-2-group-3"><img src="./assets/images/project-2.gif" class="portfolio-photos" alt="project-2 gif"></a> -->
             </div>
           </div>
           <!-- empty column -->
@@ -88,5 +100,66 @@
           </span>
         </div>
       </footer>
+
+      <!-- Code Quiz Modal -->
+      <div class="modal fade" id="code-quiz-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Code Quiz Links</h5>
+              <div class="text-center btn-group" role="group">
+                <a href="https://github.com/xander-deanna/code-quiz" type="button" class="btn btn-outline-light">GitHub Repo</a>
+                <a href="https://xander-deanna.github.io/code-quiz/" type="button" class="btn btn-outline-light">Deployed Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Password Generator Modal -->
+      <div class="modal fade" id="password-generator-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Password Generator Links</h5>
+              <div class="text-center btn-group" role="group">
+                <a href="https://github.com/xander-deanna/password-generator" type="button" class="btn btn-outline-light">GitHub</a>
+                <a href="https://xander-deanna.github.io/password-generator/" type="button" class="btn btn-outline-light">Deployed Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 1 Modal -->
+      <div class="modal fade" id="project-1-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Project 1 Links</h5>
+              <div class="text-center btn-group" role="group">
+                <a href="https://github.com/xander-deanna/project-1-group-7" type="button" class="btn btn-outline-light">GitHub</a>
+                <a href="https://xander-deanna.github.io/project-1-group-7/" type="button" class="btn btn-outline-light">Deployed Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 Modal -->
+      <div class="modal fade" id="project-2-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Project 2 Links</h5>
+              <div class="text-center btn-group" role="group">
+                <a href="https://github.com/xander-deanna/project-2-group-3" type="button" class="btn btn-outline-light">GitHub</a>
+                <a href="https://damp-thicket-88352.herokuapp.com/" type="button" class="btn btn-outline-light">Deployed Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </body>
   </html>

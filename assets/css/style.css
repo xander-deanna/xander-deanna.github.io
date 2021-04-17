@@ -1,15 +1,16 @@
+/* ------------------------ ALL PAGES ----------------------- */
 /* Resetting font for entire page */
 * {
     font-family: 'Inconsolata', monospace; 
     color: #c9c9c9;}
-
+ 
 /* setting header text back to white */
 h1 {
     color: #ffffff;}
 
 /* background image */
 body {
-    background-image: url('../images/backgroundimage.gif'); 
+    background-image: url('../images/background-image.gif'); 
     background-repeat:repeat;}
 
 /* navbar attributes for all pages*/
@@ -22,37 +23,10 @@ body {
 .main-content-box {
     padding: 10px; 
     background-color: #212529; 
-    box-shadow: 10px 10px #00000033;  
+    box-shadow: 10px 10px #00000090;  
     border: 1px solid #000000;}
 
-/* about me photo */
-.about-me-photo {
-    width: 200px; 
-    border: 1px solid #000000; 
-    margin: 0px 20px 10px 0px; 
-    float: left;}
-
-/* portfolio photos*/
-.portfolio-col {
-    text-align: center;
-}
-.portfolio-photos {
-    width: 240px; 
-    border: 1px solid #000000; 
-    margin: 20px 20px 20px 20px;
-    display:inline-block;
-}
-.portfolio-col {
-    margin: 0px 5px 0px 0px ;
-}
-
-/* contact icon and portfolio icon */
-.contact-icon, .portfolio-icon{
-    font-size: 35px;
-    margin: 0px 10px 0px 5px;
-}
-
-/* footer attributes for all pages */
+/* footer attributes */
 footer {
     color: #ffffff8c; 
     background-color: #111116; 
@@ -67,6 +41,36 @@ footer {
     margin: 5px 3px 0px 3px; 
 }
 
+/* ----------------------- ABOUT ME PAGE ---------------------- */
+/* about me photo */
+.about-me-photo {
+    width: 200px; 
+    border: 1px solid #000000; 
+    margin: 0px 20px 10px 0px; 
+    float: left;}
 
+/* ----------------------- PORTFOLIO PAGE --------------------- */
+/* portfolio photos*/
+.portfolio-col {
+    text-align: center;
+}
+.portfolio-photos {
+    width: 240px; 
+    border: 1px solid #000000; 
+    margin: 20px 20px 20px 20px;
+    display:inline-block;
+}
+.portfolio-photos:hover {
+    opacity: 50%;
+} 
+.portfolio-col {
+    margin: 0px 5px 0px 0px ;
+}
 
-    
+/* modal */
+.modal-header {
+    border-bottom: none !important;
+}
+.modal-content {
+    background-color: #212529 !important; 
+}  
