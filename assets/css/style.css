@@ -2,29 +2,35 @@
 /* Resetting font for entire page */
 * {
     font-family: 'Inconsolata', monospace; 
-    color: #c9c9c9;}
+    color: #c9c9c9;
+}
  
 /* setting header text back to white */
 h1 {
-    color: #ffffff;}
+    color: #ffffff;
+}
 
 /* background image */
 body {
     background-image: url('../images/background-image.gif'); 
-    background-repeat:repeat;}
+    background-repeat:repeat;
+}
 
 /* navbar attributes for all pages*/
 .navbar {
-    border: 1px solid #000000;}
+    border: 1px solid #000000;
+}
 
 /* main content box attributes for all pages */
 .main-div-margin {
-    margin: 110px 0px 110px 0px;}
+    margin: 110px 0px 110px 0px;
+}
 .main-content-box {
     padding: 10px; 
     background-color: #212529; 
     box-shadow: 10px 10px #00000090;  
-    border: 1px solid #000000;}
+    border: 1px solid #000000;
+}
 
 /* footer attributes */
 footer {
@@ -47,7 +53,8 @@ footer {
     width: 200px; 
     border: 1px solid #000000; 
     margin: 0px 20px 10px 0px; 
-    float: left;}
+    float: left;
+}
 
 /* ----------------------- PORTFOLIO PAGE --------------------- */
 /* portfolio photos*/
