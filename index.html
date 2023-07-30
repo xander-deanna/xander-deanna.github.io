@@ -88,14 +88,14 @@
           <br>
 
           <!-- intro section (cool stuff happens here) -->
-          <section class="section" id="intro" >
+          <section class="section" data-anchor="intro" >
             <img class="center-shit" style="text-align:center;" src="./images/xander-art.svg">
           </section>
 
           <br>
 
           <!-- about section -->
-          <section class="section" id="about">
+          <section class="section" data-anchor="about">
             <div class="center-shit">
               <h1 style="text-align:center; word-spacing: 1px;"><b>Hi there!</b></h1>
               <h4 style="text-align:center;">My name is &thinsp;<b style="letter-spacing: -1px;"></b><b style="word-spacing: .01em;"><code>Deanna</code>&thinsp; <code>Ale<span class="rainbow">xander</span></code></code></b>.</h4>
@@ -159,7 +159,7 @@
           <br>
 
           <!-- artwork section -->
-          <section class="section" id="artwork">
+          <section class="section" data-anchor="artwork">
             <div id="carouselExampleIndicators" class="carousel carousel-dark slide center-shit" data-bs-ride="carousel">
               <div class="carousel-inner" >
                 <div class="carousel-item active">
@@ -189,20 +189,14 @@
       </div>
     </div>
     <script>
-      // function myFunction() {
-      //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      //   var scrolled = (winScroll / height) * 100;
-      //   document.getElementById("myBar").style.width = scrolled + "%";
-      // }
       new fullpage('#fullpage', {
         //options here
         autoScrolling:true,
+        anchors: ["intro", "about", "artwork"],
         scrollHorizontally: true,
         afterLoad: function(_origin, destination, _direction, _trigger){
           const numberOfSections = document.getElementsByClassName("section").length
             var scrolled = (destination.index / (numberOfSections - 1)) * 100;
-            console.log(scrolled)
             document.getElementById("myBar").style.width = scrolled + "%";
         }
       });
