@@ -21,8 +21,9 @@
     <!-- font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 
-    <!-- fullpage.js -->
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
 
     <!-- custom stylesheet (overwrites bootstrap in the cascade)-->
     <link href="./style.css" rel="stylesheet">
@@ -188,23 +189,23 @@
       </div>
     </div>
     <script>
-      window.onscroll = function() {myFunction()};
-        function myFunction() {
-          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          var scrolled = (winScroll / height) * 100;
-          document.getElementById("myBar").style.width = scrolled + "%";
+      // function myFunction() {
+      //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      //   var scrolled = (winScroll / height) * 100;
+      //   document.getElementById("myBar").style.width = scrolled + "%";
+      // }
+      new fullpage('#fullpage', {
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true,
+        afterLoad: function(_origin, destination, _direction, _trigger){
+          const numberOfSections = document.getElementsByClassName("section").length
+            var scrolled = (destination.index / (numberOfSections - 1)) * 100;
+            console.log(scrolled)
+            document.getElementById("myBar").style.width = scrolled + "%";
         }
+      });
     </script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
     </body>
 </html>
