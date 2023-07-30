@@ -82,7 +82,7 @@ padding-right: 20px!important;
   width: 25px;
   height: 25px;
   background-size: cover;
-  background-image: url("/images/logo-black.gif");
+  background-image: url("./images/logo-black.gif");
   transform: rotate(180deg);
   animation : pulse 1s infinite;
 }
@@ -91,7 +91,7 @@ padding-right: 20px!important;
   width: 25px;
   height: 25px;
   background-size: cover;
-  background-image: url("/images/logo-arrow.gif");
+  background-image: url("./images/logo-arrow.gif");
 }
 
 .accordion-button:hover {
@@ -104,14 +104,14 @@ border-bottom: 0px solid #000000!important;
 .nav-logo {
   width: 40px;
   height: 40px;
-  background: url("/images/logo-black.gif") no-repeat;
+  background: url("./images/logo-black.gif") no-repeat;
   background-size: cover;
 }
 
 .nav-logo:hover {
   width: 40px;
   height: 40px;
-  background: url("/images/logo-color.gif") no-repeat;
+  background: url("./images/logo-color.gif") no-repeat;
   background-size: cover;
 }
 
@@ -343,40 +343,40 @@ padding-bottom: 5px;
   width: 40px;
   height: 40px;
   background-size: cover;
-  background-image: url("/images/logo-prev.gif");
+  background-image: url("./images/logo-prev.gif");
   filter: none!important;
 }
 .carousel-control-next-icon::before {
   width: 40px;
   height: 40px;
   background-size: cover;
-  background-image: url("/images/logo-next.gif");
+  background-image: url("./images/logo-next.gif");
   filter: none!important;
 }
 .carousel-control-prev-icon::after {
   width: 40px;
   height: 40px;
   background-size: cover;
-  background-image: url("/images/logo-prev.gif");
+  background-image: url("./images/logo-prev.gif");
 }
 .carousel-control-next-icon::after {
   width: 40px;
   height: 40px;
   background-size: cover;
-  background-image: url("/images/logo-next.gif");
+  background-image: url("./images/logo-next.gif");
 }
 .carousel-control-prev-icon {
   width: 40px;
   height: 40px;
   background-size: cover;
-  background-image: url("/images/logo-prev.gif");
+  background-image: url("./images/logo-prev.gif");
   filter: none!important;
 }
 .carousel-control-next-icon {
   width: 40px;
   height: 40px;
   background-size: cover;
-  background-image: url("/images/logo-next.gif");
+  background-image: url("./images/logo-next.gif");
   filter: none!important;
 }
 .web-window {
